@@ -1,6 +1,6 @@
 cd /
 cd /home/git/Dockerproject/
-docker stop prem
-docker rm prem
-docker build -t prem1 /home/git/Dockerproject/
-docker run -d --name prem -p 80:80 -v /home/git/Dockerproject/src/:/var/www/html prem1
+docker stop helloworld 
+docker rm helloworld 
+docker build -t hello-world /home/git/Dockerproject/
+docker run -d --name helloworld -p 80:80 -v /home/git/Dockerproject/src/:/var/www/html hello-world
