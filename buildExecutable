@@ -1,6 +1,6 @@
 cd /
-cd /home/ec2-user/github/dockerdemo/
+cd /home/git/Dockerproject/
 docker stop prem
 docker rm prem
-docker build -t prem1 /home/ec2-user/github/dockerdemo/
-docker run -d --name prem -p 80:80 -v /home/ec2-user/github/dockerdemo/src/:/var/www/html prem1
+docker build -t prem1 /home/git/Dockerproject/
+docker run -d --name prem -p 80:80 -v /home/git/Dockerproject/src/:/var/www/html prem1
